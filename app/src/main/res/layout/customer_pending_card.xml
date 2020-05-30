@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/customerpending_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/person_face_img" />
+
+    <LinearLayout
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/customerpending_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Muraad Saeed"
+                android:textColor="#131313"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/icon_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_clock" />
+
+                <TextView
+                    android:id="@+id/customerpending_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Feb 08, 2019"
+                    android:textAlignment="textEnd"
+                    android:textColor="#757575" />
+            </LinearLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/status"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_weight="0"-->
+<!--                android:background="@drawable/rounded_rectangle"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:paddingVertical="4dp"-->
+<!--                android:text="Accept"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="12sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:background="@drawable/crossgrey">-->
+
+<!--            </Button>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/customer_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:id="@+id/icon_dress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dress_icon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_outfit" />
+
+                <TextView
+                    android:id="@+id/customerpending_dress_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Kurta Lahori"
+                    android:maxLength="15"
+                    android:textAlignment="textStart"
+                    android:textColor="#757575"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

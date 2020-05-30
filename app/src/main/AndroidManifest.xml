@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.stichitv2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".loadingScreen" />
+        <activity android:name=".PopupProfile" />
+        <activity android:name=".RejectedOrderCustomerDetails" />
+        <activity android:name=".RejectedOrderCustomer" />
+        <activity android:name=".TailorRejectedOrderDetails" />
+        <activity android:name=".RejectedOrderTailor" />
+        <activity android:name=".AcceptReject" />
+        <activity android:name=".CustomerPendingOrderDetails" />
+        <activity android:name=".CustomerNewOrderDetails" />
+        <activity android:name=".CustomerNewOrders" />
+        <activity android:name=".FindTailorProfile" />
+        <activity android:name=".TailorNewOrderDetails" />
+        <activity android:name=".TailorLocation" />
+        <activity android:name=".TailorNewOrder" />
+        <activity android:name=".CutomerNotificationOrderDetails" />
+        <activity android:name=".CustomerHistoryOrderDetails" />
+        <activity android:name=".CustomerHistory" />
+        <activity android:name=".CustomerNotification" />
+        <activity android:name=".FindTailor" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".EnterCode" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".Gallery" />
+        <activity android:name=".TailorAddWork" />
+        <activity android:name=".ViewTailorWork" />
+        <activity android:name=".OrderPlaced" />
+        <activity android:name=".SendOrder" />
+        <activity android:name=".TailorHistory" />
+        <activity android:name=".NotificationTailor" />
+        <activity android:name=".Language" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".HelpandSupport" />
+        <activity android:name=".ReportProblem" />
+        <activity android:name=".Price" />
+        <activity android:name=".EditTrouserMeasurements" />
+        <activity android:name=".EditShirtMeasurements" />
+        <activity android:name=".NotificationOrderDetails" />
+        <activity android:name=".HistoryOrderDetails" />
+        <activity android:name=".OrderDetail" />
+        <activity android:name=".Measurements" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Home_Customer" />
+        <activity android:name=".Home_Tailor" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".CustomerOrderDetails" />
+        <activity android:name=".TailorPendingOrders" />
+        <activity android:name=".TailorPendingOrderDetails" />
+        <activity android:name=".CustomerPending" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
