@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Stichitv2</string>
+    <string name="map_key" translatable="false">AIzaSyB_UY8Mg65jm8F_BHOarN0wQAf1pFlqqtM</string>
+    <string-array name="price">
+        <item></item>
+        <item>100-400 Rps</item>
+        <item>400-700 Rps</item>
+        <item>700-1000 Rps</item>
+        <item>1000-1300 Rps</item>
+        <item>1300-1600 Rps</item>
+        <item>1600-2000 Rps</item>
+    </string-array>
+
+    <string-array name="dresses_array">
+        <item></item>
+        <item>Shalwaar Kameez</item>
+        <item>Frock</item>
+        <item>Saree</item>
+    </string-array>
+</resources>
